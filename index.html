@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NorthWindDB-Website</title>
+
+    <!-- bootstrap css -->
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- my css -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay muted loop id="myVideo" src="https://pouch.jumpshare.com/preview/6g44hW83D1B-nbS_2hCN76j6CM3He0tMIBZNK_OGOl7fzDT2rEvqFYakdmm7RTXkEu8uf2HGDbYpNUSGZucjhBiphP2mfGXqGKMDb2nWoi0QNY0Af85sZbUeW4Cdfp5b.mp4" type="video\mp4"></video>
+
+    <div id="header1" class="row my-headfoot-one">
+        <div class="col col-12">
+            <h3 class="h-text">SQL Database Reader</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col col-12 my-main">
+            <div id="dynamic">
+            <table class="table table-hidden1" id="table1">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table class="table table2-hidden" id="table2">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>jake</td>
+                    <td>johnson</td>
+                    <td>#jjohnson35</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>mark</td>
+                    <td>jones</td>
+                    <td>@mj323</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>Bird</td>
+                    <td>@LBasketss</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+    <div class="row btn-row col-12 mx-auto">
+        <div class="btn-group mx-auto" role="group" aria-label="Basic outlined example">
+            <button id="btn3" type="button" class="btn btn-outline-primary">open table one</button>
+            <div class="my-spacer"></div>
+            <button id="btn2" type="button" class="btn btn-outline-primary">open table two</button>
+            <div class="my-spacer"></div>
+            <button id="btn1" type="button" class="btn btn-outline-primary">open api</button>
+          </div>  
+        </div>
+    
+
+
+<div id="footer1" class="row my-headfoot-one">
+    <div class="col col-12">
+        <h5 class="h-text">Insert Employee</h5>
+    </div>
+
+    
+    <div class="container col-7">
+        <div class="input-group">
+            <span class="input-group-text">Last and First name</span>
+            <input id="lastName1" type="text" aria-label="Last name" class="form-control">
+            <input id="firstName1" type="text" aria-label="First name" class="form-control">
+          </div>
+          <div class="my-spacer"></div>
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping">Address</span>
+            <input id="address1" type="text" class="form-control" placeholder="ex. 1111 youraddress dr." aria-label="Username" aria-describedby="addon-wrapping">
+          </div>
+          <div class="my-spacer"></div>
+          <div class="input-group">
+            <span class="input-group-text">City and State</span>
+            <input id="City1" type="text" aria-label="City" class="form-control">
+            <input id="StateId1" type="text" aria-label="State" class="form-control">
+          </div>
+          <div class="my-spacer"></div>
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping">ZipCode</span>
+            <input id="zipCode1" type="text" class="form-control" placeholder="ex. 11111" aria-label="Username" aria-describedby="addon-wrapping">
+          </div>
+          <div class="my-spacer"></div>
+          <div class="input-group">
+            <span class="input-group-text">Phone# and #Extension</span>
+            <input id="phone1" type="text" aria-label="phone number" class="form-control">
+            <input id="ext1" type="text" aria-label="extension" class="form-control">
+          </div>
+          <div class="my-spacer"></div>
+          <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <span class="input-group-text">0.00</span>
+            <input id="Salary1" type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+          </div>
+          <div>
+            <button id="submit-btn" type="button" class="btn btn-primary btn-sm">Submit Employee</button>
+          </div>
+    </div>
+    
+    
+
+<!-- JavaScript Bundle with Popper -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="javascript.js"></script>
+</body>
+</html>
